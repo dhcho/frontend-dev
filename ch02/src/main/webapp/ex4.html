@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>안녕하세요</h1>
+	<h2>안녕하세요</h2>
+	<h3>안녕하세요</h3>
+	<h4>안녕하세요</h4>
+	<h5>안녕하세요</h5>
+	<h6>안녕하세요</h6>
+	<p>
+		문장입니다.
+	</p>
+	<p>
+		<em>강조된 키워드</em> <strong>제일 중요한 키워드</strong>
+	</p>
+	<address>
+		이름: <a href="mailto:oop6413@gmail.com">조대헌</a><br/>
+		주소: 경남 창원시 성산구<br/>
+		전화번호: 010 0000 0000<br/>
+	</address>
+	<div style="background-color:#cecece">
+		<h1>제목</h1>
+		<p>문장</p>
+	</div>
+	<p>
+		<span style="background-color:#cecece">
+			<em>강조된 키워드</em> 
+			<strong>제일 중요한 키워드</strong>
+		</span>
+	</p>
+	<pre>
+		public static void insertTest() {
+			MemberVo vo = null;
+		 
+			vo = new MemberVo();
+			vo.setName("foo");
+			vo.setTel("010-1111-1111");
+			vo.setEmail("foo@douzone.com");
+			vo.setPwd("foo");
+			new MemberDao().insert(vo);
+		
+			vo = new MemberVo();
+			vo.setName("bar");
+			vo.setTel("010-2222-2222");
+			vo.setEmail("bar@douzone.com");
+			vo.setPwd("bar");
+			new MemberDao().insert(vo);
+			}
+		}
+	</pre>
+</body>
+</html>
