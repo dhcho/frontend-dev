@@ -42,17 +42,16 @@ body	{ font-family: '맑은 고딕' 돋움; font-size:0.75em; color:#333 }
 }
 </style>
 <script>
-// DOM Level 1 Event 처리: element의 event attribute 사용하는 방식
+// DOM Level 2 Event 처리: element의 event Listener 등록 방식
 // 2) JavaScipt code(DOM API)로만 작성하기
 
-var liSelected = null; 
 var onTabClicked = function() {
 	// unselected
 	var lisSelected = document.getElementsByClassName("selected");
-	if(listSelected.length == 1) {
-		liselected[0].className = "";
-	}
-	this.className = "selected";   // selected
+	(lisSelected.length == 1) && (lisSelected[0].className = "");
+	
+	// selected
+	this.className = "selected";
 };
 
  
@@ -64,7 +63,7 @@ window.onload = function() {
 	var liTabs = ul.getElementsByTagName("li");
 	
 	for(var i = 0; i < liTabs.length; i++){
-		liTabs[i].onclick = onTabClicked;
+		liTabs[i].addEventListener("click", onTabClicked);
 	}
 }
 </script>

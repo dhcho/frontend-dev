@@ -49,10 +49,10 @@ var liSelected = null;
 var onTabClicked = function() {
 	// unselected
 	var lisSelected = document.getElementsByClassName("selected");
-	if(listSelected.length == 1) {
-		liselected[0].className = "";
-	}
-	this.className = "selected";   // selected
+	(lisSelected.length == 1) && (lisSelected[0].className = "");
+	
+	// selected
+	this.className = "selected";
 };
 
  
