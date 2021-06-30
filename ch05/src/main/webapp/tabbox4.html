@@ -3,54 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>리스트를 이용한 메뉴 만들기</title>
-<style type="text/css">
-*		{ margin:0; padding:0 }
-ul, ol 	{ list-style-type: none }		
-body	{ font-family: '맑은 고딕' 돋움; font-size:0.75em; color:#333 }
-
-.tab-box {
-	width:520px;
-	margin:50px auto 0;
-}
-
-.tab-box ul {
-	height: 24px;
-}
-
-.tab-box li {
-	float: right;
-	cursor: pointer;
-	width: 100px;
-	line-height: 22px;
-	border: 1px solid #999;
-	border-radius: 10px 10px 0 0;
-	background-color: #ccc;
-	text-align: center;
-	margin-right: 2px; 
-}
-
-.tab-box li.selected {
-	background-color: #fc6;
-}
-
-.tab-box div {
-	width: 516px;
-	border: 1px solid #999;
-	margin-top: -1px;
-	text-align: center;
-	line-height: 200px;
-}
-</style>
-<script type="text/javascript" src="jquery-1.9.0.js"></script>
+<link href="/ch05/tabbox.css" rel="stylesheet" type="text/css" />
+<script src="/ch05/tabbox.js" type="text/javascript"></script>
 <script>
-// DOM Level 2 Event 처리: element의 event Listener 등록 방식
-// 2) jQuery(DOM API Wrapper 또는 Helper)로만 작성하기
-$(function() {
-	$(".tab-box ul li").click(function() {
-		$(".selected").removeClass("selected");
-		$(this).addClass("selected");
-	});
-});
+tabBox.init();
 </script>
 </head>
 <body>
@@ -65,6 +21,6 @@ $(function() {
     <div>
     	탭뷰입니다.
     </div>
-</div>    
+</div>  
 </body>
 </html>
