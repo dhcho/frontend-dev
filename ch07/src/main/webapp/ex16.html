@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
+<script>
+	$(function() {
+		setTimeout(function() {
+			$("li:odd").css("color", "blue");
+			$("li:even").css("color", "red");
+		}, 2000);
+	});
+</script>
+</head>
+	<body>
+		<h1>선택자 - jQuery filter(even, odd)</h1>
+		<ul>
+			<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+			<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+			<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+			<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		</ul>
+	</body>
+</html>
