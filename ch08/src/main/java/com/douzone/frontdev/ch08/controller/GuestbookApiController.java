@@ -46,6 +46,13 @@ public class GuestbookApiController {
 	public JsonResult ex1() {
 		List<GuestbookVo> list = new ArrayList<>();
 		
+		GuestbookVo vo4 = new GuestbookVo();
+		vo4.setNo(4L);
+		vo4.setName("둘리3");
+		vo4.setMessage("호이3");
+		vo4.setPassword("test");
+		list.add(vo4);
+		
 		GuestbookVo vo3 = new GuestbookVo();
 		vo3.setNo(3L);
 		vo3.setName("둘리3");
