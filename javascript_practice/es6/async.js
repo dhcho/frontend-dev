@@ -45,6 +45,13 @@ const fetch = async function(url) { // ex) model.findAll, model.insert ...
 //     console.error(err);
 // });
 
+const f = async function(){
+    const response = await fetch("http://www.oop6413.com/api");
+    return response;
+}
+
+console.log(f());
+
 fetch();
 
 console.log('do something');
